@@ -27,14 +27,14 @@ function App(){
     }
      
     return (
-        <div>
-            <input  value={query} onChange={(e) => setQuery(e.target.value)}
+        <div className="input-container">
+            <input  className="input" value={query} onChange={(e) => setQuery(e.target.value)}
             placeholder = "Search for a country" />
             {
                 selected
                 ? <CountryDetail country={selected} />
                 :countries.length > 10
-                ? <p>Too many matches</p>
+                ? <p className="many">Too many matches</p>
                 : countries.length === 1
                 ? <CountryDetail country={countries[0]} />
                 :<CountryList countries={countries}  onSelect={handleShow}/>

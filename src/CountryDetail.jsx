@@ -17,22 +17,22 @@ console.log(api_key);
 
     return (
     <div>
-        <h1>{country.name.common}</h1>
-        <p>Capital: {country.capital?.[0]}</p>
-        <p>Area: {country.area}</p>
-        <h3>Languages:</h3>
+        <h1 className="heading">{country.name.common}</h1>
+        <p className="capital">Capital: {country.capital?.[0]}</p>
+        <p className="area">Area: {country.area}</p>
+        <h3 className="head3">Languages:</h3>
         <ul>
             {Object.values(country.languages || {}).map((lang, i) => (
-                <li key={i}>{lang}</li>
+                <li className="lang" key={i}>{lang}</li>
             ))}
         </ul>
         <img src={country.flags.png} alt={`Flag of ${country.name.common}`} width="150" />
          {weather && (
         <>
-          <h3>Weather in {capital}</h3>
-          <p>Temperature: {weather.main.temp} °C</p>
+          <h3 className="weather-head">Weather in {capital}</h3>
+          <p className="temp-para">Temperature: {weather.main.temp} °C</p>
           <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather icon" />
-          <p>Wind: {weather.wind.speed} m/s</p>
+          <p className="wind">Wind: {weather.wind.speed} m/s</p>
         </>
       )}
     </div>

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.show-btn{
+  background: linear-gradient(135deg, #8eaddb, #4e72c5); /* gradient */
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.70rem 1rem;
+  border: none;
+  border-radius: 9999px; /* pill shape */
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 9px 20px;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Input wrapper */
+.input-container {
+  width: 100%;
+  max-width: 600px;   /* bigger max width */
+  padding: 0 1rem;
+  margin: 2rem auto;
+}
+
+/* Input field */
+input {
+  width: 100%;
+  padding: 1.25rem 1.5rem;   /* bigger padding */
+  font-size: 1.25rem;        /* bigger text */
+  font-weight: 500;
+  border: none;
+  border-radius: 9999px;     /* pill shape */
+  outline: none;
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+/* Placeholder styling */
+input::placeholder {
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
+
+/* Focus effect */
+input:focus {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-item {
+  font-size: 1.2rem;   /* slightly smaller than button text */
+  padding: 0.1rem 0.55rem;
+  margin: 0.5rem 0;
+  background: #b6de32;  /* soft green background */
+  color: #188d45;       /* deep green text */
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.many {
+    color: white;
+    margin: 8px;
+    font-size: 18px;
+}
+
+/* Headings */
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.head3,
+.weather-head {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #e0e7ff; /* soft lavender-blue */
+}
+
+/* Paragraphs */
+.capital,
+.area,
+.temp-para,
+.wind {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #f3f4f6; /* slightly muted white */
+}
+
+/* Languages list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lang {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.75rem;
+  margin: 0.3rem 0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #f9fafb;
+  display: inline-block;
+}
+
+/* Images (flag + weather) */
+img {
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
